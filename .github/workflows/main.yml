@@ -1,13 +1,13 @@
-name: Test
+name: Test Composite Action
 
 on: [push]
 
 jobs:
-  test-build:
+  local-action:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ls
-        run: |
-          echo "Hola Mundo" >> hola.txt
-          cat hola.txt
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+      - name: LS
+        uses: ./.github/actions/my-action
