@@ -1,0 +1,9 @@
+name: "My action"
+description: "Test my action"
+
+runs:
+  using: "composite"
+
+  steeps:
+    - name: Hola mundo
+      run: echo "Hola Mundo"
