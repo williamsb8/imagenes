@@ -4,7 +4,7 @@ description: "Test my action"
 runs:
   using: "composite"
 
-  steeps:
+  steps:
     - name: Hola mundo
       run: echo "Hola Mundo"
       shell: bash
