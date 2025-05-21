@@ -27,3 +27,19 @@ jobs:
       uses: actions/checkout@v4.2.2
     - name: LS
       run: ls -al
+
+    - name: Septup Node.js enviroment
+      uses: actions/setup-node@v4.4.0
+      with:
+        node-version: latest
+
+    - name: node version
+      run: node --version
+
+    - name: PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.3'
+
+    - name: php version
+      run: php --version
