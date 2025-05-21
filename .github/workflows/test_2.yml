@@ -1,0 +1,14 @@
+name: Test Variables
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VAR: Mi variable de entorno
+
+    steps:
+      - name: Test
+        run: echo "Valor ${{ vars.MY_VARIABLE_2 }}"
