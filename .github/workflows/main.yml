@@ -11,3 +11,5 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: LS
         uses: ./.github/actions/my-action
+        with:
+          message: "Wilian Morales"
