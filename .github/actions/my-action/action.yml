@@ -7,3 +7,4 @@ runs:
   steeps:
     - name: Hola mundo
       run: echo "Hola Mundo"
+      shell: bash
